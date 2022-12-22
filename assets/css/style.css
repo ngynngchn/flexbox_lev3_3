@@ -1,0 +1,140 @@
+/* Font: Cinzel, poppins.
+border: #ccc.
+color logo: #999.
+color home: #fff.
+color: #333
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Cinzel;
+  src: url("../fonts/Cinzel/static/Cinzel-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  font-family: Cinzel;
+  margin-bottom: 70px;
+}
+
+/* logo */
+header p {
+  background-color: #fff;
+  color: #999;
+  text-align: start;
+  padding: 10px 20px;
+}
+/* hero */
+header div {
+  color: #fff;
+  background: url("../img/background.avif") no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  text-align: center;
+  padding: 70px 70px;
+}
+
+h3 {
+  font-family: Cinzel;
+}
+
+main section {
+  font-family: Poppins;
+  margin-top: 50px;
+}
+
+/* gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+  margin-block: 100px;
+}
+
+.gallery img {
+  width: 28vw;
+}
+/* tour dates */
+.tour-dates {
+  text-align: left;
+}
+
+.tour-dates p {
+  margin-block: 16px;
+}
+
+.date-1::after {
+  content: "- Sold out";
+  text-transform: uppercase;
+  color: red;
+}
+.date-2::after {
+  content: "- Sold out";
+  text-transform: uppercase;
+  color: red;
+}
+.date-3::after {
+  content: "- Sold out";
+  text-transform: uppercase;
+  color: red;
+}
+.date-4::after {
+  content: "- Only 4 spots available";
+  text-transform: uppercase;
+  color: red;
+}
+.date-5::after {
+  content: "- Available";
+  text-transform: uppercase;
+  color: green;
+}
+.date-6::after {
+  content: "- Available";
+  color: green;
+}
+
+/* footer */
+footer {
+  border-top: 1px solid #ccc;
+  margin-top: 50px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a {
+  opacity: 0.6;
+}
+
+nav a:hover {
+  opacity: 1;
+}
