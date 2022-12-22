@@ -1,9 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: Cinzel;
   src: url("../fonts/Cinzel/static/Cinzel-Regular.ttf");
@@ -14,11 +8,18 @@
   src: url("../fonts/Poppins/Poppins-Regular.ttf");
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 header {
   width: 100vw;
   height: 100vh;
   font-family: Cinzel;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
+  text-align: center;
 }
 
 /* logo */
@@ -28,6 +29,7 @@ header p {
   text-align: start;
   padding: 10px 20px;
 }
+
 /* hero */
 header div {
   color: #fff;
@@ -40,13 +42,21 @@ header div {
   align-items: center;
 }
 
+h1 {
+  font-size: 4rem;
+  width: 400px;
+}
+
+/* main */
+
 main {
   text-align: center;
-  padding: 70px 70px;
+  padding: 50px 90px;
 }
 
 h3 {
   font-family: Cinzel;
+  margin-bottom: 20px;
 }
 
 main section {
@@ -58,8 +68,9 @@ main section {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  text-align: center;
+  justify-content: space-around;
+  row-gap: 40px;
   margin-block: 100px;
 }
 
@@ -73,31 +84,20 @@ main section {
   margin-block: 16px;
 }
 
-.date-1::after {
-  content: "- Sold out";
-  text-transform: uppercase;
-  color: red;
-}
-.date-2::after {
-  content: "- Sold out";
-  text-transform: uppercase;
-  color: red;
-}
+.date-1::after,
+.date-2::after,
 .date-3::after {
   content: "- Sold out";
   text-transform: uppercase;
   color: red;
 }
+
 .date-4::after {
   content: "- Only 4 spots available";
   text-transform: uppercase;
   color: red;
 }
-.date-5::after {
-  content: "- Available";
-  text-transform: uppercase;
-  color: green;
-}
+.date-5::after,
 .date-6::after {
   content: "- Available";
   text-transform: uppercase;
@@ -114,17 +114,12 @@ footer {
   align-items: center;
 }
 
-footer h3 {
-  margin-bottom: 20px;
-}
-
-nav a,
 a {
   opacity: 0.6;
   text-decoration: none;
   color: black;
 }
 
-nav a:hover {
+a:hover {
   opacity: 1;
 }
